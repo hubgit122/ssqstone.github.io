@@ -47,7 +47,7 @@
             
             <section class="projects section">
                 <div class="section-inner">
-                    <h2 class="heading">朋友们的祝福! </h2>
+                    <h2 class="heading" id="blessings">朋友们的祝福! </h2>
                     <div class="content" id="videos">
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -139,6 +139,8 @@
 <script>
     var vSec = $("#videos")[0];
     var vName = ["纪元","龚亚洲","刘幼航","李瑞","王祖达","马明丹","李c平","十棒","路曼琪","贺存满","任志浩","李谦","刘子超","张翔宇","闫超","罗新q","集成中心","陆继源","高德斌","增斌","刘闯","袁伦喜","晏超超 潘程","许庭兵 谢家文","陈志q 欧阳高","321","孟洪宇","郭芳金"];
+    $("#blessings").text("来自朋友们的" + vName.length + "条祝福^-^");
+
     var i;
     for(i = 0; i < vName.length; i++){
         var div = document.createElement("div");
