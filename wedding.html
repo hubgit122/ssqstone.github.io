@@ -436,7 +436,7 @@
         <div class="container">
 
             <div class="row copyright">
-                <div class="col-md-8 text-center">
+                <div class="col-md-12 text-center">
                     <p>
                         <small class="block">&copy; 2016 Jining Little Dream Electronic Technology Ltd. All Rights
                             Reserved.
@@ -450,10 +450,10 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4">
-                <script type="text/javascript"
-                        src="//rf.revolvermaps.com/0/0/8.js?i=5jd7yhp2bqw&amp;m=6&amp;s=300&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33"
-                        async="async"></script>
+                <div class="col-md-4 feature-center">
+                    <script type="text/javascript"
+                            src="//rf.revolvermaps.com/0/0/8.js?i=5jd7yhp2bqw&amp;m=6&amp;s=300&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33"
+                            async="async"></script>
                 </div>
             </div>
         </div>
@@ -534,7 +534,7 @@ simplyCountdown('.simply-countdown-one', {
         var video = document.createElement("video");
         video.style.width = "auto";
         video.style.height = "400px";
-        video.src = "videos/" + HanZi_PinYin.get(vName[i]) + ".mp4";
+        video.src = "videos/" + HanZi_PinYin.get(vName[i]).toLowerCase() + ".mp4";
         video.setAttribute("controls", "controls");
         video.setAttribute("preload", "metadata");
         video.innerHTML = "您的浏览器不支持 video标签。";
@@ -548,7 +548,7 @@ simplyCountdown('.simply-countdown-one', {
         vSec.appendChild(Div);
     }
 
-    var photos = 7;
+    var photos = 8;
     var gallery = $("#fh5co-gallery-list")[0];
 
     for (i = 1; i <= photos; i++) {
