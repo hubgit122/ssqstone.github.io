@@ -44,7 +44,9 @@
     <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
-
+<script>
+    var vName = ["方露露1", "龚亚洲", "陈聪", "刘幼航", "李瑞", "王祖达", "纪元", "张c海", "史少波", "杨磊", "马明丹", "十棒", "高威", "岳远贺", "郭杨", "d哲", "徐理想", "李c平", "陈嫣然", "方露露2", "杨莹", "韩小小", "路曼琪", "韩mm", "张雯玉", "陈康", "朱亚飞", "刘森", "邓远飞", "方露露3", "贺存满", "张发聪", "任志浩", "田野", "张翔宇", "李谦", "刘子超", "戴国辉", "q运g", "陆炎", "闫超", "罗新q", "集成中心", "陆继源", "高德斌", "增斌", "刘闯", "李桂娥", "袁伦喜", "晏超超 潘程", "许庭兵 谢家文", "陈志q 欧阳高", "321", "孟洪宇", "郭芳金"];
+</script>
 <div id="page">
     <nav class="fh5co-nav" role="navigation">
         <div class="container">
@@ -506,13 +508,14 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/magnific-popup-options.js"></script>
 
-<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 <script src="js/simplyCountdown.js"></script>
-<!-- Main -->
+
 <script src="js/main.js"></script>
 
 <script src="js/lightbox.js"></script>
-<script>    // default example
+
+
+<script>
 simplyCountdown('.simply-countdown-one', {
     year: 2017,
     month: 5,
@@ -531,11 +534,10 @@ simplyCountdown('.simply-countdown-one', {
 });
 </script>
 
-<!-- Javascript -->
-<script type="text/javascript" src="js/pinyin.js"></script>
+<script src="js/pinyin.js"></script>
+
 <script>
     var vSec = $("#videos")[0];
-    var vName = ["方露露1", "龚亚洲", "陈聪", "刘幼航", "李瑞", "王祖达", "纪元", "张c海", "史少波", "杨磊", "马明丹", "十棒", "高威", "岳远贺", "郭杨", "d哲", "李c平", "陈嫣然", "方露露2", "杨莹", "韩小小", "路曼琪", "韩mm", "张雯玉", "陈康", "朱亚飞", "刘森", "邓远飞", "方露露3", "贺存满", "张发聪", "任志浩", "田野", "张翔宇", "李谦", "刘子超", "戴国辉", "q运g", "陆炎", "闫超", "罗新q", "集成中心", "陆继源", "高德斌", "增斌", "刘闯", "李桂娥", "袁伦喜", "晏超超 潘程", "许庭兵 谢家文", "陈志q 欧阳高", "321", "孟洪宇", "郭芳金"];
     $("#blessings").text(vName.length + "");
     $("#video-counter").attr("data-to", vName.length + "");
     var i;
